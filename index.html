@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro de Estudiantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registro de Estudiantes</h1>
+
+        <div class="formulario">
+            <input type="text" id="nombre" placeholder="Nombre completo">
+            <input type="text" id="codigo" placeholder="Código del estudiante">
+            <input type="text" id="carrera" placeholder="Carrera">
+            <button onclick="registrarEstudiante()">Registrar</button>
+        </div>
+
+        <input type="text" id="buscar" placeholder="Buscar estudiante" onkeyup="buscarEstudiante()">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Código</th>
+                    <th>Carrera</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="listaEstudiantes"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
